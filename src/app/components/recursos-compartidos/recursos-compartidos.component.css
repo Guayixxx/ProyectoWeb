@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    }
+    
+    
+    html {
+        background:#1f53c5 no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        }
+    
+    .BotonConImagen1{
+        background-color: transparent;
+        border: none;
+        background-repeat:no-repeat;
+        height:45px;
+        width:45px;
+        background-position:center;
+    }
+
+    /*
+    * CATEGORY
+    */
+    .form-category {
+        float:left;
+        width: 1000px;
+        height: 90px;
+        flex-shrink: 0;
+        background: #a5cff8;
+        padding: 30px;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-left: 375px;
+        min-height: 110vh;
+        border-radius: 20px;
+        font-family: "calibri";
+        color: white;
+        box-shadow: 7px 13px 37px #000;
+        }
+        
+        .form-category h3 {
+            color: #FFF;
+            width: 635px;
+            height: 38px;
+            flex-shrink: 0;
+            /* Text */
+            font-family: Roboto Flex;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px; /* 50% */
+        }
+        
+        .layout1 {
+            width: 1500px;
+            height: 110px;
+            flex-shrink: 0;
+            background: #4C97C1;
+        }
+
+        .layout3 {
+            width: 180px;
+            height: 1440px;
+            flex-shrink: 0;
+            background: #4C97C1;
+        }
+
+        .layout2 {
+            width: 1500px;
+            height: 547px;
+            flex-shrink: 0;
+            background: #192f3b;
+        }
+
+        body {
+            background-image: linear-gradient(to top, #ecedee 0%, #eceeef 75%, #e7e8e9 100%);
+            min-height: 100vh;
+            font: normal 16px sans-serif;
+            padding: 60px 0;
+        }
+        
+        .form-category .container.gallery-container .BordeBotones{
+            width: 250px;
+            height: 54px;
+            flex-shrink: 0;
+            border-radius: 20px;
+            background: rgba(76, 151, 193, 0.27);
+            align-items: center;
+        }
+
+        .form-category .container.gallery-container {
+            width: 900px;
+            height: 50px;
+            flex-shrink: 0;
+            background: #4C97C1;
+            background-color: #fff;
+            color: #35373a;
+            min-height: 100vh;
+            border-radius: 20px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+        }
+        
+        .form-category .gallery-container h1 {
+            text-align: center;
+            margin-top: 70px;
+            font-family: 'Droid Sans', sans-serif;
+            font-weight: bold;
+        }
+        
+        
+        .form-category .tz-gallery {
+            padding: 40px;
+        }
+        
+        .form-category .tz-gallery .lightbox img {
+            width: 100%;
+            margin-bottom: 30px;
+            transition: 0.2s ease-in-out;
+            box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+        }
+        
+        
+        .form-category .tz-gallery .lightbox img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+        }
+        
+        .form-category .tz-gallery img {
+            border-radius: 4px;
+        }
+        
+        .form-category .baguetteBox-button {
+            background-color: transparent !important;
+        }
+        
+        
+        @media(max-width: 768px) {
+            body {
+                padding: 0;
+            }
+        
+            .form-category .container.gallery-container {
+                border-radius: 0;
+            }
+        }
+        
+
+        
