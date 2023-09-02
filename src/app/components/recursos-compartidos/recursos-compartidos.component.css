@@ -1,279 +1,263 @@
-    /*
+/*
     FONDOS Y DEMÁS COMPONENTES
     */
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    .layout1 {
-        width: 1500px;
-        height: 110px;
-        flex-shrink: 0;
-        background: #4C97C1;
-        margin-top: 0px;
-    }
+body {
+  margin: 0;
+  font: normal 16px sans-serif;
+}
 
-    .layout2 {
-        width: 1500px;
-        height: 547px;
-        flex-shrink: 0;
-        background: #192f3b;
-        margin-top: 0px;
-    }
-
-    body {
-        margin: 0;
-        font: normal 16px sans-serif;
-    }
-
-
-    /*
+/*
     BOTONES
     */
-    
-    .BotonConImagen1{
-        background-color: transparent;
-        border: none;
-        background-repeat:no-repeat;
-        height:45px;
-        width:45px;
-        background-position:center;
-    }
 
-    /*
+.BordeBotones {
+  display: flex; /* Utilizamos flexbox para alinear elementos internos */
+  align-items: center;
+  width: auto;
+  height: 35px;
+  border-radius: 20px;
+  background: rgba(80, 146, 185, 0.27);
+  margin-top: 1px;
+  padding-left: 50px; /* Agregamos un pequeño espacio a la izquierda para separar los botones del borde */
+}
+
+.BotonConImagen1 {
+  display: flex;
+  background-color: transparent;
+  background: none;
+  border: none;
+  width: 20px;
+  height: 20px;
+  margin-left: 25px; /* Ajusta el margen izquierdo para separar los botones */
+  align-items: center;
+  align-content: center;
+}
+
+/* Para asegurarte de que la imagen se ajuste correctamente */
+.BotonConImagen1 img {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+}
+
+/*
     * LAYOUT RECURSOS
     */
-        .formRecursos {
-            float:left;
-            width: 1100px;
-            height: 90px;
-            background: #a5cff8;
-            padding: 10px;
-            margin-top: 700px;
-            margin-right: 10px;
-            margin-bottom: 10px;
-            margin-left: 300px;
-            min-height: 110vh;
-            border-radius: 20px;
-            color: white;
-            box-shadow: 7px 13px 37px #000;
-            }
-        
-        .layout2 .h3 {
-            color: #FFF;
-            width: 635px;
-            height: 38px;
-            flex-shrink: 0;
-            /* Text */
-            font-family: Roboto Flex;
-            font-size: 60px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 30px; /* 50% */
-            
-        }
-        
+.formRecursos {
+  float: left;
+  width: 1170px;
+  height: 90px;
+  background: #a5cff8;
+  padding: 10px;
+  margin-top: 30px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 300px;
+  min-height: 185vh;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+}
 
-        
-        .formRecursos .container.gallery-container .BordeBotones{
-            width: 500px;
-            height: 54px;
-            flex-shrink: 0;
-            border-radius: 20px;
-            background: rgba(76, 151, 193, 0.27);
-            align-items: center;
-        }
+.formRecursos .container.gallery-container {
+  width: 1038px;
+  height: 50px;
+  flex-shrink: 0;
+  background: #4c97c1;
+  background-color: #fff;
+  color: #35373a;
+  min-height: 172vh;
+  border-radius: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+  margin-top: 20px;
+  margin-left: 20px;
+}
 
-        .formRecursos .container.gallery-container {
-            width: 1038px;
-            height: 50px;
-            flex-shrink: 0;
-            background: #4C97C1;
-            background-color: #fff;
-            color: #35373a;
-            min-height: 101.5vh;
-            border-radius: 20px;
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
-            margin-top: 20px;
-            margin-left: 20px;
+.formRecursos .tz-gallery {
+  padding: 40px;
+}
 
-        }
-        
-        .formRecursos .tz-gallery {
-            padding: 40px;
-        }
-        
-        .formRecursos .tz-gallery .lightbox img {
-            width: 100%;
-            margin-bottom: 30px;
-            transition: 0.2s ease-in-out;
-            box-shadow: 0 2px 3px rgba(0,0,0,0.2);
-        }
-        
-        
-        .formRecursos .tz-gallery .lightbox img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 15px rgba(0,0,0,0.3);
-        }
-        
-        .formRecursos.tz-gallery img {
-            border-radius: 4px;
-        }
-        
-        .formRecursos .baguetteBox-button {
-            background-color: transparent !important;
-        }
-        
-        
-        @media(max-width: 768px) {
-            body {
-                padding: 0;
-            }
-        
-            .formRecursos .container.gallery-container {
-                border-radius: 0;
-            }
-        }
-        /*
-        CARRUSEL DE IMÁGENES
-        */
-        .formCarrusel {
-            float:left;
-            width: 1100px;
-            height: 90px;
-            background: #a5cff8;
-            padding: 10px;
-            margin-top: 200px;
-            margin-right: 10px;
-            margin-bottom: 10px;
-            margin-left: 300px;
-            min-height: 110vh;
-            border-radius: 20px;
-            color: white;
-            box-shadow: 7px 13px 37px #000;
-            }
+.formRecursos .tz-gallery .lightbox img {
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
 
-        .formCarrusel  .layoutCarrusel .carousel-container {
-            overflow: hidden;
-            width: 100%;
-            max-width: 800px; /* Ajusta el ancho del carrusel */
-            margin: 0 auto;
-        }
-        
-        .formCarrusel  .layoutCarrusel .carousel {
-            display: flex;
-            width: 300%; /* Un 300% para contener todas las imágenes */
-            animation: carousel 10s infinite; /* Ajusta la duración de la animación */
-        }
-        
-        .formCarrusel .layoutCarrusel .carousel img {
-            width: 33.33%; /* Cada imagen ocupa 33.33% del ancho total */
-            object-fit: cover;
-        }
-        
-        @keyframes carousel {
-            0% {
-            transform: translateX(0);
-            }
-            100% {
-              transform: translateX(-66.66%); /* Desplaza hacia la izquierda para mostrar la siguiente imagen */
-            }
-        }
-        
-        .form-carrusel .layoutCarrusel{
-            float:left;
-            width: 1100px;
-            height: 90px;
-            background: #a5cff8;
-            margin-top: 10px;
-            margin-right: 10px;
-            margin-bottom: 10px;
-            margin-left: 300px;
-            min-height: 110vh;
-            border-radius: 20px;
-            color: white;
-            box-shadow: 7px 13px 37px #000;
-        }
-    
-        /*
-        SLIDE BAR VERTICAL
-        */
+.tz-gallery img {
+  width: 33.33%; /* Cada imagen ocupa 33.33% del ancho total */
+  object-fit: cover;
+  float: left;
+}
 
-        .sidebar {
-            height: 100vh;
-            width: 250px;
-            background-color: #96dee9;
-            color: white;
-            position: fixed;
-            top: 0;
-            left: 0;
-            padding-top: 20px;
-          }
-          
-          .sidebar ul {
-            list-style-type: none;
-            padding: 0;
-          }
-          
-          .sidebar li {
-            padding: 10px;
-          }
-          
-          .sidebar a {
-            text-decoration: none;
-            color: white;
-          }
+.formRecursos .tz-gallery .lightbox img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
 
-          .sidebar img {
-            background-color: transparent;
-            border: none;
-            background-repeat:no-repeat;
-            height:100px;
-            width:100px;
-            background-position:center;
-          }
-          
-          .content {
-            margin-left: 250px;
-            padding: 20px;
-          }
+.formRecursos .baguetteBox-button {
+  background-color: transparent !important;
+}
 
-        /*
-        SLIDE BAR HORIZONTAL
-        */
-        .navbar {
-            background-color: #63c9db;
-            color: white;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            height: 50px;
-            padding-right: 20px;
-          }
-          
-          .navbar ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-          }
-          
-          .navbar li {
-            margin-left: 20px;
-          }
-          
-          .navbar a {
-            text-decoration: none;
-            color: white;
-          }
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+  }
 
-          .navbar img {
-            background-color: transparent;
-            border: none;
-            background-repeat:no-repeat;
-            height:20px;
-            width:20px;
-            background-position:center;
-          }
+  .formRecursos .container.gallery-container {
+    border-radius: 0;
+    float: left;
+  }
+}
+
+/* Estilos de la barra lateral vertical */
+.sidebar {
+  height: 100vh;
+  width: 250px;
+  background-color: #2a3f54; /* Cambio de color de fondo */
+  color: #fff; /* Texto en color blanco */
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+  transition: width 0.3s ease; /* Agregamos transición suave al cambiar el ancho */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px; /* Reducimos el espacio superior */
+}
+
+.sidebar li {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease; /* Agregamos transición al cambiar el color de fondo al pasar el cursor */
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.sidebar img {
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+  height: 24px; /* Aumentamos el tamaño de los íconos */
+  width: 24px; /* Aumentamos el tamaño de los íconos */
+  margin-right: 10px;
+}
+
+/* Estilos del contenido principal */
+.content {
+  margin-left: 250px;
+  padding: 20px;
+  transition: margin-left 0.3s ease; /* Agregamos transición al abrir y cerrar la barra lateral */
+}
+
+/* Cambio de color al pasar el cursor por los elementos de la barra lateral */
+.sidebar li:hover {
+  background-color: #1e2c3d;
+}
+
+/* Estilos de la barra de navegación horizontal */
+.navbar {
+  background-color: #2a3f54; /* Cambio de color de fondo */
+  color: #fff; /* Texto en color blanco */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50px;
+  padding-right: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navbar li {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.navbar img {
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+  height: 24px; /* Aumentamos el tamaño de los íconos */
+  width: 24px; /* Aumentamos el tamaño de los íconos */
+  margin-right: 10px;
+}
+
+.pagIni {
+  margin-right: 1090px; /* Centramos el título en la barra */
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  flex-grow: 1; /* Hacemos que el título ocupe el espacio restante */
+}
+
+/* Cambio de color al pasar el cursor por los elementos de la barra de navegación */
+.navbar li:hover {
+  background-color: #1e2c3d;
+}
+
+/* Estilos para el menú desplegable */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #2a3f54; /* Cambio de color de fondo */
+  min-width: 160px;
+  z-index: 1;
+  border-top: 1px solid #3c526b; /* Agregamos un borde superior */
+  top: 100%; /* Ajustamos la posición para que aparezca debajo del elemento padre */
+  left: 0; /* Alineamos el menú a la izquierda */
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease; /* Agregamos transición al cambiar el color de fondo al pasar el cursor */
+}
+
+.dropdown-content a:hover {
+  background-color: #1e2c3d; /* Cambio de color al pasar el cursor */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
