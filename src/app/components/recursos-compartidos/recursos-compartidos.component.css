@@ -12,6 +12,31 @@ body {
   font: normal 16px sans-serif;
 }
 
+.container2 {
+  max-width: 1300px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.txtRec {
+  font-size: 24px;
+  color: #007BFF;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-left: 250px;
+}
+
+.txtRec::after {
+  content: '';
+  display: block;
+  width: 1000px;
+  height: 2px;
+  background-color: #007BFF;
+  margin-top: 10px;
+}
 /*
     BOTONES
     */
@@ -58,7 +83,7 @@ body {
   padding: 10px;
   margin-top: 30px;
   margin-right: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
   margin-left: 300px;
   min-height: 185vh;
   border-radius: 20px;
@@ -78,6 +103,7 @@ body {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
   margin-top: 20px;
   margin-left: 20px;
+  
 }
 
 .formRecursos .tz-gallery {
@@ -118,146 +144,73 @@ body {
   }
 }
 
-/* Estilos de la barra lateral vertical */
-.sidebar {
-  height: 100vh;
-  width: 250px;
-  background-color: #2a3f54; /* Cambio de color de fondo */
-  color: #fff; /* Texto en color blanco */
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding-top: 20px;
-  transition: width 0.3s ease; /* Agregamos transición suave al cambiar el ancho */
+
+
+/*
+CONTAINER PARA SUBIR DOCUMENTOS*/
+
+.container1 {
+  display: block;
+  margin-top: 200px;
+  max-width: 800px;
+  margin-left: 450px;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.sidebar ul {
-  list-style-type: none;
-  padding: 0;
-  margin-top: 20px; /* Reducimos el espacio superior */
+.container1 h1 {
+  color: #333;
+  font-size: 24px;
 }
 
-.sidebar li {
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  transition: background-color 0.3s ease; /* Agregamos transición al cambiar el color de fondo al pasar el cursor */
+.container1 p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
-.sidebar a {
-  text-decoration: none;
+.container1 .boton-cargar {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
   color: #fff;
   font-size: 18px;
-  margin-left: 10px;
-}
-
-.sidebar img {
-  background-color: transparent;
-  border: none;
-  background-repeat: no-repeat;
-  height: 24px; /* Aumentamos el tamaño de los íconos */
-  width: 24px; /* Aumentamos el tamaño de los íconos */
-  margin-right: 10px;
-}
-
-/* Estilos del contenido principal */
-.content {
-  margin-left: 250px;
-  padding: 20px;
-  transition: margin-left 0.3s ease; /* Agregamos transición al abrir y cerrar la barra lateral */
-}
-
-/* Cambio de color al pasar el cursor por los elementos de la barra lateral */
-.sidebar li:hover {
-  background-color: #1e2c3d;
-}
-
-/* Estilos de la barra de navegación horizontal */
-.navbar {
-  background-color: #2a3f54; /* Cambio de color de fondo */
-  color: #fff; /* Texto en color blanco */
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 50px;
-  padding-right: 20px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-}
-
-.navbar ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
-
-.navbar li {
-  margin-left: 20px;
-  display: flex;
-  align-items: center;
-}
-
-.navbar a {
   text-decoration: none;
-  color: #fff;
-  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
-.navbar img {
-  background-color: transparent;
-  border: none;
-  background-repeat: no-repeat;
-  height: 24px; /* Aumentamos el tamaño de los íconos */
-  width: 24px; /* Aumentamos el tamaño de los íconos */
-  margin-right: 10px;
+.container1 .boton-cargar:hover {
+  background-color: #0056b3;
 }
 
-.pagIni {
-  margin-right: 1090px; /* Centramos el título en la barra */
-  color: #fff;
-  font-size: 24px;
-  font-weight: bold;
-  flex-grow: 1; /* Hacemos que el título ocupe el espacio restante */
+/*
+BOTON PLUS
+*/
+.boton-plus {
+  background-color: #8cb6e3; /* Color de fondo del botón */
+  color: white; /* Color del icono */
+  border: none; /* Sin borde */
+  border-radius: 50%; /* Forma circular */
+  width: 40px; /* Ancho del botón */
+  height: 40px; /* Altura del botón */
+  font-size: 24px; /* Tamaño del icono */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse */
+  position: fixed; /* Fija el botón en la posición deseada */
+  bottom: 20px; /* Posición desde la parte inferior */
+  right: 20px; /* Posición desde la derecha */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); /* Sombra ligera */
+  outline: none; /* Elimina el contorno del botón cuando se enfoca */
 }
 
-/* Cambio de color al pasar el cursor por los elementos de la barra de navegación */
-.navbar li:hover {
-  background-color: #1e2c3d;
+.boton-plus:hover {
+  background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse */
 }
 
-/* Estilos para el menú desplegable */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #2a3f54; /* Cambio de color de fondo */
-  min-width: 160px;
-  z-index: 1;
-  border-top: 1px solid #3c526b; /* Agregamos un borde superior */
-  top: 100%; /* Ajustamos la posición para que aparezca debajo del elemento padre */
-  left: 0; /* Alineamos el menú a la izquierda */
-}
-
-.dropdown-content a {
-  color: #fff;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  transition: background-color 0.3s ease; /* Agregamos transición al cambiar el color de fondo al pasar el cursor */
-}
-
-.dropdown-content a:hover {
-  background-color: #1e2c3d; /* Cambio de color al pasar el cursor */
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
+.boton-plus img{
+  width: 20px;
+  height: 20px;
 }

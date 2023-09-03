@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarouselComponent implements OnInit {
   images = [
-    { src: 'https://thumbs.dreamstime.com/b/ca%C3%ADdas-horizontales-35225210.jpg' },
-    { src: 'https://images.unsplash.com/photo-1533422902779-aff35862e462?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG9yaXpvbnRhbHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80' },
-    { src: 'https://images.unsplash.com/photo-1598449356475-b9f71db7d847?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aG9yaXpvbnRhbHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80' }
+    { src: 'https://images.theconversation.com/files/502439/original/file-20221221-15-rseen2.jpg?ixlib=rb-1.1.0&rect=0%2C229%2C5472%2C2736&q=45&auto=format&w=1356&h=668&fit=crop' },
+    { src: 'https://sarrauteducacion.com/wp-content/uploads/2023/02/Santander-educacion.jpeg' },
+    { src: 'https://realcup.org/wp-content/uploads/2022/12/enfoque-de-la-educacion-superior.jpg' }
   ];
 
   currentIndex = 0;
