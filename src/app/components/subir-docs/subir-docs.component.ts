@@ -13,5 +13,8 @@ export class SubirDocsComponent  implements OnInit {
   ngOnInit(): void {
   }
 
+  selectedContentType: string = 'documento'; // Valor predeterminado
 
+  // Función para manejar el cambio en la opción seleccionada
+  onContentTypeChange() {}
 }
