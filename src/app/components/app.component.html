@@ -1,3 +1,8 @@
-<app-search> 
-  (search)=""
-</app-search>
+<app-search 
+  (search)= "handleSearch($event)"
+></app-search>
+<div class="container milista"> 
+<ul>
+  <li *ngFor="let usuario of usuarios | search:filtro_valor ">{{ usuario.name}} </li>
+</ul>
+</div>

@@ -1,7 +1,8 @@
 /*Angular */
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {ReactiveFormsModule, FormsModule} from '@angular/forms'
+import {ReactiveFormsModule, FormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http'
 
 
 /* components*/
@@ -12,13 +13,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 /*angular Material*/
 
-import {MatInputModule} from '@angular/material/input'
-import {MatFormFieldModule} from '@angular/material/form-field'
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { SearchPipe } from './pipes/search.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SearchComponent
+    SearchComponent,
+    SearchPipe
   ],
   imports: [
     BrowserAnimationsModule,
@@ -26,7 +29,8 @@ import {MatFormFieldModule} from '@angular/material/form-field'
     MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],
