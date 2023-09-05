@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida - Nombre del Usuario</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f5f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #1a2b3c;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #1a2b3c;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* Agrega más estilos según sea necesario */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hoja de Vida de Nombre del Usuario</h1>
+    </header>
+    <div class="container">
+        <section>
+            <h2>Información Personal</h2>
+            <p>Nombre: Juan Pérez</p>
+            <p>Fecha de Nacimiento: 15 de agosto de 1980</p>
+            <p>Correo Electrónico: juan@example.com</p>
+            <p>Teléfono: (123) 456-7890</p>
+        </section>
+
+        <section>
+            <h2>Experiencia Laboral</h2>
+            <p><strong>Empresa XYZ</strong> - Desarrollador Web (2010 - Presente)</p>
+            <p>Descripción de las responsabilidades y logros en este trabajo.</p>
+
+            <p><strong>Empresa ABC</strong> - Diseñador Gráfico (2005 - 2010)</p>
+            <p>Descripción de las responsabilidades y logros en este trabajo.</p>
+        </section>
+
+        <section>
+            <h2>Educación</h2>
+            <p><strong>Universidad ABC</strong> - Licenciatura en Informática (2001 - 2005)</p>
+            <p>Descripción de la educación y los logros académicos.</p>
+        </section>
+        
+        <!-- Puedes agregar más secciones según sea necesario -->
+
+    </div>
+</body>
+</html>
