@@ -44,6 +44,8 @@ import { DateDisplayPipe } from './pipes/date-display.pipe';
 import { TimeAgoPipe } from 'time-ago-pipe';
 import { DatePipe } from '@angular/common';
 import { MatDividerModule } from '@angular/material/divider';
+import { ListResourcesComponent } from './laura/components/list-resources/list-resources.component';
+import { AddEditResourceComponent } from './laura/components/add-edit-resource/add-edit-resource.component';
 
 
 @NgModule({
@@ -68,6 +70,8 @@ import { MatDividerModule } from '@angular/material/divider';
     SignUpComponent,
     ProfileComponent,
     DateDisplayPipe,
+    ListResourcesComponent,
+    AddEditResourceComponent,
   ],
   imports: [
     BrowserModule,
